@@ -2,12 +2,12 @@ pipeline{
 	agent any
 	
 	stages {
-		stage ("Escenario 1.1"){
+		stage ("Escenario 1.0"){
 			steps{
 				sh """echo BUILD: ${BUILD_ID}"""
 			}
 		}
-		stage ("Escenario 2.1"){
+		stage ("Escenario 2.0"){
 			steps{
 				sh """echo JOB NAME: ${JOB_NAME}"""
 			}
