@@ -7,7 +7,7 @@ pipeline{
 				sh """echo BUILD: ${BUILD_ID}"""
 			}
 		}
-		stage ("Escenario 2.2"){
+		stage ("Escenario 2.1"){
 			steps{
 				sh """echo JOB NAME: ${JOB_NAME}"""
 			}
