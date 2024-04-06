@@ -9,12 +9,7 @@ pipeline{
 		}
 		stage ("Escenario 2"){
 			steps{
-				sh """echo BUILD: ${JOB_NAME}"""
-			}
-		}
-		stage ("Escenario 3"){
-			steps{
-				sh "echo Hola mundo"
+				sh """echo JOB NAME: ${JOB_NAME}"""
 			}
 		}
 	}
