@@ -1,0 +1,22 @@
+pipeline{
+	agent any
+	
+	stages {
+		stage ("Escenario 1"){
+			steps{
+				sh """echo BUILD: ${BUILD_ID}"""
+			}
+		}
+		stage ("Escenario 2"){
+			steps{
+				sh """echo BUILD: ${JOB_NAME}"""
+			}
+		}
+		stage ("Escenario 3"){
+			steps{
+				sh "echo Hola mundo"
+			}
+		}
+	}
+
+}
